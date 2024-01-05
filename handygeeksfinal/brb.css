@@ -1,0 +1,40 @@
+:root {
+    --grey: #939393;
+    --darkgrey: #7f7f7f;
+    --darkergrey: #686868;
+    --evendarkergrey: #464545;
+    --orange: #ff4c00;
+    --yellow: #ff7000;
+}
+
+
+* {    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+}
+
+.display{
+    display: flex;
+    flex-direction: column;
+}
+
+.display img{
+    width: auto;
+    height: 330px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.brb-heading{
+    font-family: 'Fjord One', serif;
+    font-size: 32px;
+    font-weight: 600;
+    display: inline-flex;
+    text-decoration: none;
+    flex-wrap: nowrap;
+    margin: auto;
+    padding-top: 40px;
+}

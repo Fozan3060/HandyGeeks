@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/search.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjord+One&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap" rel="stylesheet">
+    <title>The Handy Geeks</title>
+</head>
+<body>
+    <header>
+        <div class="headerStrip">
+            
+          <button class="header-button" disabled style="cursor: default;">
+            <img
+              class="header-img"
+              src="assets/phone-call.png"
+              style="margin-right: 5px"
+            />
+            <p style="display: inline-block;" class="header-text">Call us now:&nbsp;&nbsp;</p>
+            <a class="header-text" style="display: inline-block;" href="tel:+1 818-835-0556"
+              >+1 818-835-0556</a
+            >
+            &emsp;
+          </button>
+          <button class="header-button" data-toggle="modal" data-target="#modal3">
+            
+              <img style="margin-right: 5px" class="header-img" src="assets/calendar.png" />
+              <p style="display: inline-block;" class="header-text second-header-text">SCHEDULE SERVICE</p>
+          </button>
+            <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Contact Us</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="close-button" aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="login-page">
+                            <div class="form">
+                              <form id="login-form" class="login-form">
+                                <input type="text" placeholder="Full Name" name="name" required/>
+                                <input type="text" placeholder="Email" name="email" required/>
+                                <input type="tel" placeholder="Phone Number" name="phone"/>
+                                <textarea name="details" rows="10" placeholder="Additional Details"></textarea>
+                                <textarea name="details" rows="10" placeholder="Questions"></textarea>
+                                <button type="submit" id="loginButton">SUBMIT</button>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-info modal-button-text" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+        </div>
+        <div class="headerNav">
+            <div class="leftHeaderSection">
+                <div class="hamburger" onclick="toggleSideMenuVisbility()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="white" stroke-width="0.5" fill="white" height="100%"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
+                </div>
+                <a href="home.html" class="navbarImgContainer">
+
+                  <img
+                  src="assets/LogoDesignCropped.png"
+                  alt="Logo"
+                  class="navbarImg"
+                />
+    
+              </a>
+            </div>
+            <nav>
+              <a class="navItem" href="home.html">Home</a>
+              <a class="navItem" href="services.html">Services</a>
+              <a class="navItem" href="work-gallery.html">Our Work</a>
+              <a class="navItem" href="testimonials.html">Testimonials</a>
+              <a class="navItem" href="blog.html">Blog</a>
+              <button class="contact"><a class="navItem" href="contact.html">Contact Us</a></button>
+              <button class="join"> <a class="navItem" href="joinus.html">Join Us</a></button>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <div class="mt-5 pt-5 mb-5" ></div>
+
+    <aside>
+        <a class="asideItem" href="home.html">Home</a>
+        <a class="asideItem" href="services.html">Services</a>
+        <a class="asideItem" href="work-gallery.html">Our Work</a>
+        <a class="asideItem" href="testimonials.html">Testimonials</a>
+        <a class="asideItem" href="blog.html">Blog</a>
+        <a class="asideItem" href="contact.html">Contact Us</a>
+        <a class="asideItem" href="joinus.html">Join Us</a>
+    </aside>
+
+    <div class="overlay" onclick="toggleSideMenuVisbility()"></div>
+
+    <h2 class="services-heading" style="text-align: center;">Our Testimonials</h2>
+
+    <div class="testimonialStack">
+        <div class="testimonialCard">
+            <div class="testimonialImg">
+                <img src="./assets/person.png">
+            </div>
+            <div class="testimonialText">
+                <h3>Debbie B.</h3>
+                <p>
+                  "Bernard was amazing!! He was flexible with my reschedules, came promptly to the appointment, was super quick to assemble all of our furniture and was super professional!! He was a great conversationalist and threw in a nightstand as a nice gesture. I will DEFINITELY use him again!!!"
+                </p>
+            </div>
+        </div>
+        <div class="testimonialCard">
+            <div class="testimonialImg">
+                <img src="./assets/person.png">
+            </div>
+            <div class="testimonialText">
+                <h3>Allyson N.</h3>
+                <p>
+                  "I can't recommend Bernard highly enough.  We were pulling our hair out assembling out door furniture so we reached out to Handy Geek based on reviews. He replied within minutes and by the evening all the furniture and fire pit were done!   He was polite, punctual (texted his eta) and fast!"
+                </p>
+            </div>
+        </div>
+        <div class="testimonialCard">
+            <div class="testimonialImg">
+                <img src="./assets/person.png">
+            </div>
+            <div class="testimonialText">
+                <h3>Kristina K.</h3>
+                <p>
+                    "What impressed me right away was that Bernard responded to my request immediately! He asked the right questions about our pergola assembly and looked up on his own the pergola model instructions ahead of time so he could give an accurate time frame for completion. He and his assistant were very friendly, efficient and organized and left patio area clean. As soon as my patio furniture arrives I’ve already got him coming back to assemble it! "
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="subfooter justify-content-center flex-wrap d-flex align-items-center mb-5">
+      <a class="widget" href="https://www.thumbtack.com/ca/tarzana/handyman/handy-geeks/service/427779587165790236"
+        target="_blank">
+        <img 
+          src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/pro-svg/orange/2021.svg" />
+        <script
+          src="https://www.thumbtack.com/profile/widgets/scripts/?service_pk=427779587165790236&widget_id=profile"></script>
+        </a>
+        <a class="widget" href="https://www.thumbtack.com/ca/tarzana/handyman/handy-geeks/service/427779587165790236" target="_blank">
+          <img  src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/pro-svg/orange/2022.svg" />
+          <script src="https://www.thumbtack.com/profile/widgets/scripts/?service_pk=427779587165790236&widget_id=profile"></script>
+          </a>
+          <a class="widget" href="https://www.thumbtack.com/ca/tarzana/handyman/handy-geeks/service/427779587165790236" target="_blank">
+            <img  src="https://cdn.thumbtackstatic.com/fe-assets-web/media/pages/profile/standard-widgets/pro-svg/orange/2020.svg" />
+            <script src="https://www.thumbtack.com/profile/widgets/scripts/?service_pk=427779587165790236&widget_id=profile"></script>
+            </a>
+      </div>
+      <div class="subfooter_2 d-flex flex-wrap justify-content-center">
+        <a href=""><img class="satisfaction" loading="lazy" decoding="async" width="103" height="69"
+        src="https://www.fleetwellusa.com/wp-content/uploads/2023/02/Satisfaction.webp"
+        alt="Satisfaction Logo"></a>
+        
+    <a href="https://maps.app.goo.gl/YVBPSmP3XZxFoqdD9"> <img class="Google_Logo" loading="lazy" decoding="async" width="241" height="58"
+        src="https://www.fleetwellusa.com/wp-content/uploads/2023/02/Google.webp"
+        alt="Google_Logo"></a>
+     
+      </div>
+    <div class="ending-bracket">
+        <div class="ending-column ending-logo-container">
+            <img src="assets/Logo Design.png" class="ending-logo">
+            <h4>FINEST FURNITIUTRES</h4>
+        </div>
+        <div class="ending-column">
+            <h2 class="ending-heading">Popular Services</h2>
+            <a href="https://forms.gle/Nici25JpoCG6rsNp7" class="ending-text">Furniture Assembly</a>
+            <a href="https://forms.gle/2ANKV5HJSiU8wJH76" class="ending-text">TV Wall Mounting</a>
+            <a href="https://forms.gle/YEV3MyZWHVkzL2sq9" class="ending-text">General Handyman Services</a>
+            <a href="https://forms.gle/WWGQqeiPCdoLfznEA" class="ending-text">Gazebo and Pergola Assembly</a>
+            <a href="https://forms.gle/M79TquEpY9bLeGEm6" class="ending-text">Wall Hanging Installation</a>
+            <a href="https://forms.gle/hZyWSXLgvB7ftyQy7" class="ending-text">Gym Equipment Assembly</a>
+            <a href="https://forms.gle/XMJVr2sRZ5r9r1Sh9" class="ending-text">Playground Assembly</a>
+        </div>
+        <div class="ending-column">
+            <h2 class="ending-heading">Contact Us</h2>
+            <p class="ending-text">Email: <a href="mailto:info@thehandygeeks.co">info@thehandygeeks.co</a></p>
+            <p class="ending-text">Phone Number: <a href="tel:+1 818-835-0556">+1 818-835-0556</a></p>
+        </div>
+        <div class="ending-column">
+            <h2 class="ending-heading">Quick Links</h2>
+            <a class="ending-text" href="home.html">Home</a>
+            <a class="ending-text" href="services.html">Services</a>
+            <a class="ending-text" href="blog.html">Blog</a>
+            <a class="ending-text" href="contact.html">Contact Us</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer_logos d-flex justify-content-center">
+        <a href="https://www.linkedin.com/company/thehandygeeks"> <i class="fab fa-linkedin"></i></a>
+       <a href="https://m.facebook.com/profile.php/?id=61552386652498"><i class="fab fa-facebook"></i></a>
+       <a href="https://instagram.com/thehandygeeks"><i class="fab fa-instagram"></i></a>
+       <a href="https://www.tiktok.com/@thehandygeeks"><i class="fab fa-tiktok"></i></a>
+       <a href=""><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="legal">
+            <p>&copy; 2023 The Handy Geeks</p>
+            
+            <div class="legal__links">
+              <span><button type="button" class="footer-link" data-toggle="modal" data-target="#modal1">Privacy policy</button> | <button class="footer-link" data-toggle="modal" data-target="#modal2">Terms & Conditions</button></span>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Privacy policy</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="close-button" aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    Privacy Policy Agreement<br><br>
+
+                    Effective Date: September 28, 2023<br><br>
+                    
+                    At The Handy Geeks LLC, we take your privacy seriously. This Privacy Policy explains how we collect and use your personal information when you visit our website or use our online services. We are committed to maintaining high privacy standards and will always strive to exceed them.
+                    <br><br>
+                    Changes to this Policy: We may update this Privacy Policy from time to time. We recommend checking this page regularly for the latest information. If we ever use your personal information in a significantly different way than stated here, we will notify you via email and seek your consent if required.
+                    <br><br>
+                    This Privacy Policy applies specifically to The Handy Geeks LLC and governs data collection and usage through our website (www.thehandygeeks.co). It does not apply to third-party websites or individuals not affiliated with us. We advise you to review the privacy policies of other websites you visit.
+                    <br><br>
+                    Information We Collect
+                    <br><br>
+                    We collect the following types of information:
+                    <br><br>
+                    Voluntarily Provided Information: This includes your name, address, email when you make appointments or request services.
+                        <br><br>
+                    Automatically Collected Information: When you visit our website, we may collect information such as cookies, third-party tracking technologies, and server logs. We may also gather non-personal demographic data like age, gender, and IP address to improve our services.
+                        <br><br>
+                    Social Media and Interactive Features: Our website may use third-party social media features and interactive programs that collect your IP address and use cookies. These are governed by the providers' privacy policies and are not under our control.
+                        <br><br>
+                    We only collect personal information that you knowingly and willingly provide, and we use it only for the purpose for which it was requested, as specified in this Policy.
+                    <br><br>
+                    Why We Collect Information and For How Long
+                    <br><br>
+                    We collect your data for several reasons:
+                    <br><br>
+                        To understand your needs and provide requested services.
+                        To improve our services and products based on legitimate interests.
+                        To send promotional emails with your consent.
+                        To conduct surveys and market research with your consent.
+                        To customize our website according to your preferences.
+                        <br><br>
+                    We retain your data for a duration based on its relevance, our legal obligations, and our legitimate interests as outlined in this Policy.
+                    <br><br>
+                    Use of Information Collected
+                    <br><br>
+                    We do not sell, rent, or lease customer lists or names to third parties. We use your personal information to operate our website and deliver requested services. We may also contact you regarding surveys and research related to our services.
+                    <br><br>
+                    Disclosure of Information
+                    <br><br>
+                    We may share your information:
+                    <br><br>
+                        To provide services or products you've ordered. <br>
+                        As described in this Policy or with your consent. <br>
+                        In an aggregated, non-identifiable form.<br>
+                        As required by law or in response to legal requests. <br>
+                        With outside auditors bound by confidentiality. <br>
+                        To enforce our Terms of Service or protect our rights and property.<br><br>
+                    
+                    Non-Marketing Purposes
+                    <br><br>
+                    We may contact you for non-marketing reasons, such as changes in our services. In such cases, we may use public means like our website or newspapers to post notices.
+                    <br><br>
+                    Children under the Age of 13
+                    <br><br>
+                    Our website is not directed at or knowingly collects information from children under 13. If we discover such data has been collected, we will promptly delete it or seek verifiable parental consent.
+                    <br><br>
+                    Unsubscribe or Opt-Out
+                    <br><br>
+                    You can unsubscribe from our communications by emailing info@thehandygeeks.co or following unsubscribe instructions on third-party websites. We will adhere to this Policy regarding previously collected personal information.
+                    <br><br>
+                    Links to Other Websites
+                    <br><br>
+                    Our website contains links to other sites. We do not endorse or accept responsibility for their privacy policies. We encourage you to read the privacy statements of all websites that collect personally identifiable information.
+                    <br><br>
+                    Notice to European Union Users
+                    <br><br>
+                    By providing personal information to us, you consent to its storage and use as described in this Policy, including transfer to the United States. You have rights under the General Data Protection Regulation (GDPR), including the right to access, rectify, erase, restrict processing, data portability, object, and the right to be informed. We aim to encrypt and anonymize your data whenever possible and have protocols for data breach notification.
+                    <br><br>
+                    Security
+                    <br><br>
+                    We take precautions to protect your information online and offline, using encryption and secure servers. Only authorized personnel have access to personally identifiable information. We also use Secure Socket Layer (SSL) for authentication and private communications.
+                    <br><br>
+                    Acceptance of Terms
+                    <br><br>
+                    By using our website, you accept the terms of this Privacy Policy. If you disagree with our terms and conditions, please refrain from using our site. Continued use after updates or changes signifies your agreement with such changes.
+                    <br><br>
+                    Contact Us
+                    <br><br>
+                    If you have questions or concerns regarding this Privacy Policy Agreement, please contact us:
+                    <br><br>
+                    Email: info@thehandygeeks.co <br>
+                    Phone: 424-200-0562 <br>
+                    Mailing Address: <br>
+                    The Handy Geeks LLC <br>
+                    7043 Jordan Ave, Apt 205 <br>
+                    Canoga Park, CA 91303 <br><br>
+                    
+                    Data Controller <br><br>
+                    
+                    The data controller responsible for your personal information for GDPR compliance is:
+                    <br><br>
+                    
+                    The Handy Geeks Support<br>
+                    Email: info@thehandygeeks.co<br><br>
+                    
+                    GDPR Disclosure
+                    <br><br>
+                    This Privacy Policy is designed to account for GDPR compliance. To ensure full compliance, we have assessed data processing activities, maintain data processing agreements with third-party vendors, and have protocols in place for data breaches. Visit https://gdpr.eu for complete GDPR compliance details.
+                    <br><br>
+                    COPPA Compliance Disclosure
+                    <br><br>
+                    Our website is not directed at children under 13, and we do not knowingly collect their personal information. If you collect such data, please comply with COPPA regulations. Visit https://www.ftc.gov/tips-advice/business-center/guidance/childrens-online-privacy-protection-rule-six-step-compliance for COPPA compliance information. We are not responsible for COPPA compliance issues related to your website or online service.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info modal-button-text" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLongTitle">Terms and conditions</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <b>Terms and Conditions</b>
+                    <br><br>
+
+<i>Effective Date: September 28, 2023</i>
+<br><br>
+
+Welcome to The Handy Geeks LLC! We are pleased to provide you with our handyman services under the following Terms and Conditions. By using our services, you agree to abide by these terms. Please read them carefully.
+<br><br>
+<b>1. Service Agreement</b>
+<br><br>
+1.1 <b>Scope of Services</b>: The Handy Geeks LLC offers handyman services in the state of California. Our services include home repairs, maintenance, installations, and related tasks.
+<br><br>
+1.2 <b>Service Availability</b>: Our services are available in select areas of California. We will inform you of service availability based on your location.
+<br><br>
+1.3 <b>Service Scheduling</b>: To request our services, please contact us through our website or phone. We will schedule appointments based on availability.
+<br><br>
+1.4 <b>Service Fees</b>: Service fees are based on the type of service requested and the extent of work required. You will receive a quote before services are rendered.
+<br><br>
+1.5 <b>Payment</b>: Payment for services is due upon completion. We accept various payment methods, including credit cards, cryptocurrency, and cash.
+<br><br>
+2. <b>Appointment Policies</b>
+<br><br>
+2.1 <b>Appointment Confirmation</b>: We will confirm your appointment by email or phone. Please ensure your contact information is accurate.
+<br><br>
+2.2 <b>Appointment Changes</b>: If you need to reschedule or cancel an appointment, please notify us at least 24 hours in advance.
+<br><br>
+2.3 <b>Late Arrival</b>: If we are delayed due to unforeseen circumstances, we will notify you as soon as possible and make every effort to reschedule promptly.
+<br><br>
+<b>3. Privacy Policy</b>
+<br><br>
+Our Privacy Policy outlines how we collect, use, and protect your personal information. By using our services, you agree to our Privacy Policy.
+<br><br>
+<b>4. Customer Responsibilities</b>
+<br><br>
+4.1 <b>Safe Environment</b>: You are responsible for providing a safe working environment for our technicians. Ensure clear access to the work area and remove any hazards.
+<br><br>
+4.2 <b>Utilities</b>: Ensure that utilities (e.g., water, electricity) are available as needed for the services.
+<br><br>
+4.3 <b>Permits and Approvals</b>: If required by law or local regulations, you are responsible for obtaining necessary permits or approvals for the services.
+<br><br>
+<b>5. Warranty</b>
+<br><br>
+We provide a limited warranty for our services. Details of the warranty, including the duration and coverage, will be provided with your service agreement.
+<br><br>
+<b>6. Liability</b>
+<br><br>
+6.1 <b>Property Damage</b>: While we take precautions to avoid damage, we are not liable for any damage to your property during the provision of services.
+<br><br>
+6.2 <b>Personal Injury</b>: We take safety seriously, but accidents can happen. You acknowledge that we are not liable for personal injuries during service provision.
+<br><br>
+<b>7. Termination</b>
+<br><br>
+We reserve the right to terminate services if you violate these Terms and Conditions, engage in illegal activities, or pose a safety risk to our technicians.
+<br><br>
+<b>8. Governing Law</b>
+<br><br>
+These Terms and Conditions are governed by the laws of the state of California. Any disputes shall be resolved in the appropriate courts of California.
+<br><br>
+<b>9. Contact Information</b>
+<br><br>
+If you have questions or concerns about these Terms and Conditions, please contact us at:
+<br><br>
+Email: info@thehandygeeks.co
+Phone: 855-295-8895
+Mailing Address:
+The Handy Geeks LLC
+7043 Jordan Ave, Apt 205
+Canoga Park, CA 91303
+<br><br>
+<b>10. Modification of Terms</b>
+<br><br>
+We reserve the right to modify these Terms and Conditions at any time. Updates will be posted on our website, and continued use of our services constitutes acceptance of the revised terms.
+<br><br>
+By using our handyman services, you acknowledge that you have read, understood, and agreed to these Terms and Conditions.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info modal-button-text" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+
+    <script lang="js">
+        let isSideMenuVisible = false;
+
+        function toggleSideMenuVisbility() {
+            if (isSideMenuVisible) {
+                document.querySelector('aside').style.display = 'none';
+                document.querySelector('.overlay').style.display = 'none';
+            } else {
+                document.querySelector('aside').style.display = 'block';
+                document.querySelector('.overlay').style.display = 'block';
+            }
+            isSideMenuVisible = !isSideMenuVisible;
+        }
+    </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/650c3c0e0f2b18434fd9c9ec/1harsl6pe';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+
+        <script>
+          const formmm = document.getElementById("login-form");
+    
+          const handleContactSubmit = async (event) => {
+            event.preventDefault();
+            const formData = new FormData(formmm);
+            console.log({ formData });
+            const contactUsData = {};
+    
+            formData.forEach((value, key) => {
+              contactUsData[key] = value;
+            });
+    
+            console.log("User data:", contactUsData);
+    
+            try {
+              const response = await fetch("http://localhost:3000/contact-us", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(contactUsData),
+              });
+    
+              console.log("Status Code Received :", response.status);
+              if (response.status === 200) {
+                alert("Thank You for contacting us. We will get back to you soon.");
+              } else {
+                alert("Something went wrong. Please try again later.");
+              }
+            } catch (error) {
+              console.log(error);
+            }
+          };
+          formmm.onsubmit = handleContactSubmit;
+        </script>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
